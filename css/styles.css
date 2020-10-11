@@ -179,6 +179,48 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+.tasks-list .overlay-description {
+  position: absolute;
+
+  top: 251px;
+  left: 83px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--third-title-color);
+
+  opacity: 0;
+}
+.tasks-list .overlay:hover .overlay-description {
+  opacity: 1;
+  z-index: 2;
+}
+
+.tasks-list .overlay {
+  position: relative;
+  width: 370px;
+}
+.tasks-list .overlay:hover::after {
+  opacity: 1;
+  z-index: 1;
+}
+.tasks-list .overlay::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 224px;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  opacity: 0;
+}
 /*team section*/
 
 .team-section {
