@@ -340,7 +340,43 @@ img {
 
   letter-spacing: 0.03em;
 }
+.portfolio-gallery .overlay {
+  position: relative;
+  width: 370px;
+}
+.portfolio-gallery .overlay::after {
+  content: "";
 
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+.portfolio-gallery .overlay:hover::after {
+  opacity: 1;
+  z-index: 1;
+}
+.portfolio-gallery .overlay-description {
+  position: absolute;
+
+  top: 63px;
+  left: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  color: var(--third-title-color);
+
+  opacity: 0;
+}
+.portfolio-gallery .overlay:hover .overlay-description {
+  opacity: 1;
+  z-index: 2;
+}
 /* --------------------content directions ------------------*/
 
 /* === main === */
