@@ -16,12 +16,19 @@
   pointer-events: none;
   transform: scale(0);
 }
+/*.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 15px;
+}*/
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  display: block;
   min-height: 581px;
   min-width: 528px;
 
